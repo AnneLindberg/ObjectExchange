@@ -20,4 +20,9 @@ public class Coffeepot
   {
     return capacity;
   }
+
+  @Override public String toString()
+  {
+    return color + "/" + capacity;
+  }
 }

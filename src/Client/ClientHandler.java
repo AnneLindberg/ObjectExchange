@@ -1,9 +1,11 @@
 package Client;
 
+import java.io.Console;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class ClientHandler implements Runnable
 {
@@ -35,7 +37,11 @@ public class ClientHandler implements Runnable
     {
       while (true)
       {
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter color of your coffeepot");
+        String color = scanner.nextLine();
+        System.out.println("Please enter capacity of your coffeepot");
+        String capacity = scanner.nextLine();
       }
     }
     catch (Exception e)
